@@ -2,11 +2,17 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
-
+  color:#2F3E77;
+  font-family: var(--font-family-primary);
+  background: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0.00) 96.11%);
 }
 
 :root{
-  --font-family-primary: 
+  --font-family-primary: 'Nunito', sans-serif;
   --text-color-primary: #2F3E77;
   --text-color-secondary: #EA686D;
+  --text-color-light: #FFF;
+
+  --box-shadow-input: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  --box-shadow-button:  0px 4px 15px 0px #EA686D;
 }
