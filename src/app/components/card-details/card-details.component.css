@@ -1,0 +1,133 @@
+.card_details{
+    width: 33.25rem;
+    height: 100vh;
+    border-radius: 2px;
+    background: var(--text-color-light);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--box-shadow-card-details);
+    margin-bottom: 1.4375rem;
+  }
+
+  .section1{
+    width: 100%;
+  }
+
+   .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 33px;
+    padding-right: 48px;
+    border: 1px solid red;
+   }
+
+   .identification{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .name{
+    font-size: 2.1875rem;
+    font-weight: 700;
+  }
+
+  .identification_data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    font-size: 22px;
+  }
+
+  .type, .code{
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+    border: 1px solid red;
+    align-items: center;
+  }
+
+  .ty{
+    border-radius: 2px;
+    background: #F7802A;
+    color: var(--text-color-light);
+    padding: 5px 24px;
+    margin-left: 10px;
+  }
+
+  .avatar{
+    border: 1px solid red;
+    width: 100%;
+    padding-left: 61px;
+    padding-right: 48px;
+    padding-top: 56px;
+    padding-bottom: 36px;
+  }
+
+  .avatar img{
+    width: 100%;
+    object-fit: cover;
+    background-color: yellow;
+  }
+
+  .evolution{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding-left: 44px;
+    padding-right: 42px;
+  }
+
+  .section2, .section3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  .section2 h4, .section3 h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .graphic{
+    width: 100%;
+    height: 310px;
+    border: 1px solid red;
+  }
+  
+  .data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  
+  .info_data{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    /* padding-left: 1.125rem;
+    padding-right: 0.875rem; */
+  }
+
+  
+  .data_value{
+    font-weight: 600;
+  }
+  .data_type{
+    font-weight: 700;
+  }

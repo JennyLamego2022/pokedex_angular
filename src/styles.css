@@ -17,4 +17,5 @@
 
   --box-shadow-input: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   --box-shadow-button:  0px 4px 15px 0px #EA686D;
+  --box-shadow-card-details: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
