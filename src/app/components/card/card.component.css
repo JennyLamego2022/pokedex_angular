@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: var(--box-shadow-input);
-  margin-bottom: 2rem;
+  margin-bottom: 1.4375rem;
 }
 
 .name{
