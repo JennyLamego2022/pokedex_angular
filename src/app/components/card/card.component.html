@@ -1,19 +1,30 @@
-<div class="card">
+<div class="card" *ngIf="pokemonData">
   <div class="identification">
-    <p class="name">Charmeleon</p>
-    <p class="cod">#COD</p>
+    <p class="name">{{ pokemonData.name }}</p>
+    <p class="cod">{{ pokemonData.id }}</p>
   </div>
   <div>
-    <img src="../../../assets/img/image 6.svg" alt="Avatar Pokemon">
+    <img *ngIf="pokemonData.sprites && pokemonData.sprites.front_default" [src]="pokemonData.sprites.front_default" alt="Avatar Pokemon">
   </div>
   <div class="info_data">
     <div class="data">
       <p class="data_type">Altura:</p>
-      <p class="data_value">1.10cm</p>
+      <p class="data_value">{{ pokemonData.height }}cm</p>
     </div>
     <div class="data">
       <p class="data_type">Peso:</p>
-      <p class="data_value">19kg</p>
+      <p class="data_value">{{ pokemonData.weight }}Kg</p>
     </div>
   </div>
 </div>
+
+<!-- <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ pokemonData.name }}</h5>
+    <img [src]="pokemonData.sprites.front_default" class="card-img" alt="Sprite">
+    <p class="card-text">Height: {{ pokemonData.height }}</p>
+    <p class="card-text">Weight: {{ pokemonData.weight }}</p>
+   
+  </div>
+</div> -->
+
