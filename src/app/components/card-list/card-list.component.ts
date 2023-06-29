@@ -27,7 +27,7 @@ export class CardListComponent implements OnInit{
     this.pokemonService.getPokemonList(10).subscribe(
       (pokemonList: Pokemon[]) => {
         this.pokemonList10 = pokemonList;
-        console.log('FUNCIONANDO', pokemonList);
+        console.log('Lista de Pokémons', pokemonList);
       },
       (error: any) => {
         console.log('Ocorreu um erro ao obter a lista de Pokemons:', error);
@@ -39,7 +39,7 @@ export class CardListComponent implements OnInit{
     this.pokemonService.getPokemonList().subscribe(
       (pokemonList: Pokemon[]) => {
       this.pokemonList = pokemonList;
-      console.log('FUNCIONANDO', pokemonList)
+      console.log('Lista de Pokémons', pokemonList)
       },
       (error: any) => {
         console.log('Ocorreu um erro a obter a lista de Pokemons:', error)
@@ -56,7 +56,6 @@ export class CardListComponent implements OnInit{
       behavior: 'smooth'
     });
     if (!isForward) {
-      console.log("offButton CLICADO");
     }
   }
 
@@ -77,7 +76,6 @@ export class CardListComponent implements OnInit{
       behavior: 'smooth'
     });
     if (!isForward) {
-      console.log("offButton CLICADO");
     }
   }
 

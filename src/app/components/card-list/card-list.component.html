@@ -10,7 +10,6 @@
     </div>
     <h4>Mais procurados</h4>
     <div class="caroussel" #myScrollableElement style="overflow-x: scroll;">
-      <!-- <app-card [pokemonData]="pokemonData"></app-card> -->
       <app-card *ngFor="let pokemonItem of pokemonList10" [pokemonData]="pokemonItem"></app-card>
       
     </div>

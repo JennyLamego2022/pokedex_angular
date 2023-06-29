@@ -37,6 +37,11 @@
   transition: scroll-left 0.3s ease-in-out; 
 }
 
+.scroll span{
+  cursor:pointer;
+  z-index:1;
+}
+
 .scroll span:nth-child(1){
   position: absolute;
   bottom: 7.3125rem;
@@ -58,31 +63,30 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-
-  
 }
+
 .scroll2{
   position:absolute;
   right: -2rem;
 }
 
 .all{
-  /* display:flex;
-  flex-direction: row;
-  column-gap:2rem;
-  flex-wrap: wrap; */
-
   display: grid;
-  grid-template-columns: repeat(30, 1fr); /* 3 colunas no grid */
-  grid-gap: 2rem; /* Espaçamento entre os cards */
-  overflow-x: scroll; /* Adiciona barras de rolagem quando necessário */
-  height: 600px; /* Altura da div container */
-  scrollbar-width: thin; /* Estilo da barra de rolagem */
+  grid-template-columns: repeat(30, 1fr); 
+  grid-gap: 2rem; 
+  overflow-x: scroll;  
+  height: 650px; 
 
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-scrollbar-width: none;
 
   scroll-behavior: smooth;
   transition: scroll-left 0.3s ease-in-out; 
+}
+
+.all::-webkit-scrollbar {
+  width: 0.5rem; 
+  background-color: transparent;
 }
