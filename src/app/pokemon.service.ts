@@ -26,18 +26,47 @@ export class PokemonService {
 
   constructor(private http: HttpClient) { }
 
-  getPokemonList(): Observable<Pokemon[]> {
-    return this.http.get<any>(`${this.baseUrl}/pokemon`).pipe(
-      map((response: any) => {
-        return response.results.map((pokemon: any) => {
+  // getPokemonList(): Observable<Pokemon[]> {
+  //   return this.http.get<any>(`${this.baseUrl}/pokemon`).pipe(
+  //     map((response: any) => {
+  //       return response.results.map((pokemon: any) => {
+  //         const pokemonId = pokemon.url.split('/')[6];
+  //         return this.http.get<any>(`${this.baseUrl}/pokemon/${pokemonId}`).pipe(
+  //           map((pokemonResponse: any) => {
+  //             return {
+  //               id: pokemonId,
+  //               name: pokemonResponse.name,
+  //               height: pokemonResponse.height*10,
+  //               weight: pokemonResponse.weight/10,
+  //               sprites: {
+  //                 front_default: pokemonResponse.sprites.front_default
+  //               }
+  //             };
+  //           })
+  //         );
+  //       });
+  //     }),
+  //     switchMap((pokemonRequests: Observable<Pokemon>[]) => {
+  //       return forkJoin(pokemonRequests);
+  //     })
+  //   );
+  // }
+
+  getPokemonList(pageLimit: number = 60, pageOffset: number = 0): Observable<Pokemon[]> {
+    const url = `${this.baseUrl}/pokemon?limit=${pageLimit}&offset=${pageOffset}`;
+    
+    return this.http.get<any>(url).pipe(
+      switchMap((response: any) => {
+        const pokemonRequests: Observable<Pokemon>[] = response.results.map((pokemon: any) => {
           const pokemonId = pokemon.url.split('/')[6];
+          
           return this.http.get<any>(`${this.baseUrl}/pokemon/${pokemonId}`).pipe(
             map((pokemonResponse: any) => {
               return {
                 id: pokemonId,
                 name: pokemonResponse.name,
-                height: pokemonResponse.height*10,
-                weight: pokemonResponse.weight/10,
+                height: pokemonResponse.height * 10,
+                weight: pokemonResponse.weight / 10,
                 sprites: {
                   front_default: pokemonResponse.sprites.front_default
                 }
@@ -45,12 +74,12 @@ export class PokemonService {
             })
           );
         });
-      }),
-      switchMap((pokemonRequests: Observable<Pokemon>[]) => {
+        
         return forkJoin(pokemonRequests);
       })
     );
   }
+  
   
 
   

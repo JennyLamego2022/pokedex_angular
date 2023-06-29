@@ -1,17 +1,17 @@
 <div  class="card_list">
   <section class="section1">
     <div class="scroll">
-      <span>
+      <span (click)="offButtonClick()">
         <img src="../../../assets/img/seta left.svg" alt="Seta esquerda">
       </span>
-      <span>
+      <span (click)="onButtonClick()">
         <img src="../../../assets/img/seta rigth.svg" alt="Seta direita">
       </span>
     </div>
     <h4>Mais procurados</h4>
-    <div class="caroussel">
+    <div class="caroussel" #myScrollableElement style="overflow-x: scroll;">
       <!-- <app-card [pokemonData]="pokemonData"></app-card> -->
-      <app-card *ngFor="let pokemonItem of pokemonList" [pokemonData]="pokemonItem"></app-card>
+      <app-card *ngFor="let pokemonItem of pokemonList10" [pokemonData]="pokemonItem"></app-card>
       
     </div>
   </section>
@@ -19,15 +19,15 @@
     <div class="pokedex">
       <h4>Pokédex</h4>
       <div class="scroll2">
-        <span>
+        <span (click)="offButtonClick2()">
           <img src="../../../assets/img/seta left.svg" alt="Seta esquerda">
         </span>
-        <span>
+        <span (click)="onButtonClick2()">
           <img src="../../../assets/img/seta rigth.svg" alt="Seta direita">
-        </span>
+        </span >
       </div>
     </div>
-    <div class="all">
+    <div class="all" #myScrollableElement2 style="overflow-x: scroll;">
       <app-card *ngFor="let pokemon of pokemonList"[pokemonData]="pokemon"></app-card>
     </div>
   </section>
