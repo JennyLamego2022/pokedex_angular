@@ -10,18 +10,9 @@
     </div>
     <h4>Mais procurados</h4>
     <div class="caroussel">
-      <app-card *ngFor="let pokemonItem of pokemonList" [pokemonData]="pokemonItem"></app-card>
       <app-card [pokemonData]="pokemonData"></app-card>
-
-      <app-card></app-card>
-      <!-- <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>  -->
+      <app-card *ngFor="let pokemonItem of pokemonList" [pokemonData]="pokemonItem"></app-card>
+      
     </div>
   </section>
   <section class="section2">
@@ -38,7 +29,6 @@
     </div>
     <div class="all">
       <app-card *ngFor="let pokemon of pokemonList"[pokemonData]="pokemon"></app-card>
-      <app-card></app-card>
     </div>
   </section>
 </div>

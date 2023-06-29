@@ -3,7 +3,7 @@
     <p class="name">{{ pokemonData.name }}</p>
     <p class="cod">{{ pokemonData.id }}</p>
   </div>
-  <div>
+  <div class="img">
     <img *ngIf="pokemonData.sprites && pokemonData.sprites.front_default" [src]="pokemonData.sprites.front_default" alt="Avatar Pokemon">
   </div>
   <div class="info_data">
@@ -17,14 +17,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">{{ pokemonData.name }}</h5>
-    <img [src]="pokemonData.sprites.front_default" class="card-img" alt="Sprite">
-    <p class="card-text">Height: {{ pokemonData.height }}</p>
-    <p class="card-text">Weight: {{ pokemonData.weight }}</p>
-   
-  </div>
-</div> -->
-

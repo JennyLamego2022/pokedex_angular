@@ -11,15 +11,15 @@ export class InputComponent {
 
   constructor(private PokemonService: PokemonService) { }
 
-  searchPokemon(pokemonName: string) {
-    this.PokemonService.getPokemonData(pokemonName).subscribe(
-      (pokemonData: any) => {
-        console.log('Dados do Pokemon:', pokemonData);
-      },
-      error => {
-        console.log('Ocorreu um erro:', error)
-      }
-    )
-  }
+  // searchPokemon(pokemonName: string) {
+  //   this.PokemonService.getPokemonData(pokemonName).subscribe(
+  //     (pokemonData: any) => {
+  //       console.log('Dados do Pokemon:', pokemonData);
+  //     },
+  //     error => {
+  //       console.log('Ocorreu um erro:', error)
+  //     }
+  //   )
+  // }
 
 }

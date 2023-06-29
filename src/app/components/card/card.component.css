@@ -15,13 +15,26 @@
 .name{
   font-size: 1.375rem;
   font-weight: 700;
-
 }
 
 .name::first-letter{
   text-transform:uppercase;
 }
 
+.img{
+  width:100%;
+  height: 122px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: cente
+}
+
+.img img{
+  object-fit: contain;
+  transform: scale(1.4);
+  transform-origin: center center;
+}
 .identification, .data{
   width: 100%;
   display: flex;
