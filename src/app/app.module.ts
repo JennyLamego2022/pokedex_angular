@@ -9,6 +9,7 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ButtonUpComponent } from './components/button-up/button-up.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     InputComponent,
     CardComponent,
     CardListComponent,
-    CardDetailsComponent
+    CardDetailsComponent,
+    ButtonUpComponent
   ],
   imports: [
     BrowserModule,

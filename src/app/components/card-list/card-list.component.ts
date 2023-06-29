@@ -50,7 +50,7 @@ export class CardListComponent implements OnInit{
   //Scroll
   scrollButtonClick(isForward: boolean) {
     const scrollable = this.myScrollableElement.nativeElement;
-    const scrollAmount = isForward ? scrollable.scrollLeft + 500 : scrollable.scrollLeft - 500;
+    const scrollAmount = isForward ? scrollable.scrollLeft + 254 : scrollable.scrollLeft - 254;
     scrollable.scrollTo({
       left: scrollAmount,
       behavior: 'smooth'
@@ -70,7 +70,7 @@ export class CardListComponent implements OnInit{
 
   scrollButtonClick2(isForward: boolean) {
     const scrollable = this.myScrollableElement2.nativeElement;
-    const scrollAmount = isForward ? scrollable.scrollLeft + 1270 : scrollable.scrollLeft - 1270;
+    const scrollAmount = isForward ? scrollable.scrollLeft + 1270 : scrollable.scrollLeft - 500;
     scrollable.scrollTo({
       left: scrollAmount,
       behavior: 'smooth'

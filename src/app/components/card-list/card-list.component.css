@@ -90,3 +90,30 @@
   width: 0.5rem; 
   background-color: transparent;
 }
+
+@media (max-width:425px){
+  .caroussel{
+    padding-left:1rem;
+  }
+
+  .section1 h4 {
+    text-align: center;
+  }
+
+  .pokedex{
+    justify-content: center;
+  }
+
+  .scroll2{
+    display: none;
+  }
+
+  .all{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  row-gap:0;
+  }
+}
