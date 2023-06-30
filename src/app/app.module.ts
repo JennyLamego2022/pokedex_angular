@@ -10,6 +10,7 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ButtonUpComponent } from './components/button-up/button-up.component';
+import { CardDetailsService } from './services/card-details.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ButtonUpComponent } from './components/button-up/button-up.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CardDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

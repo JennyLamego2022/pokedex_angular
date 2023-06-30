@@ -1,5 +1,6 @@
 import { Pokemon, PokemonService } from 'src/app/pokemon.service';
 import { Component, Input } from '@angular/core';
+import { CardDetailsService } from 'src/app/services/card-details.service';
 
 @Component({
   selector: 'app-card',
@@ -7,11 +8,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
- 
   @Input() pokemonData: Pokemon | undefined;
 
-constructor(private pokemonService: PokemonService) {}
+  mostrarDetalhes: boolean = false;
 
+constructor(private pokemonService: PokemonService, private cardDetailsService: CardDetailsService) {}
+
+  toggleDetalhes(): void {
+    this.cardDetailsService.toggleDetalhes();
+    console.log('toogle')
+  }
 }
 
 

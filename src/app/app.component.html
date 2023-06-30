@@ -2,6 +2,6 @@
   <app-button-up></app-button-up>
   <app-input></app-input>
   <app-card-list></app-card-list>
-  <app-card-details></app-card-details>
+  <app-card-details *ngIf="cardDetailsService.mostrarDetalhes$ | async"></app-card-details>
 </div>
 

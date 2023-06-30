@@ -1,4 +1,4 @@
-<div class="card" *ngIf="pokemonData">
+<div class="card" *ngIf="pokemonData" (click)="toggleDetalhes()">
   <div class="identification">
     <p class="name">{{ pokemonData.name }}</p>
     <p class="cod">#COD</p>
