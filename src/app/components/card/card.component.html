@@ -1,7 +1,8 @@
 <div class="card" *ngIf="pokemonData">
   <div class="identification">
     <p class="name">{{ pokemonData.name }}</p>
-    <p class="cod">{{ pokemonData.id }}</p>
+    <p class="cod">#COD</p>
+    <!-- <p class="cod">{{ pokemonData.id }}</p> -->
   </div>
   <div class="img">
     <img *ngIf="pokemonData.sprites && pokemonData.sprites.front_default" [src]="pokemonData.sprites.front_default" alt="Avatar Pokemon">

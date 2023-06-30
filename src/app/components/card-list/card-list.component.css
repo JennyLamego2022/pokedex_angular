@@ -37,9 +37,13 @@
   transition: scroll-left 0.3s ease-in-out; 
 }
 
-.scroll span{
+.scroll span, .scroll2 span{
   cursor:pointer;
   z-index:1;
+}
+
+.scroll span:hover, .scroll2 span:hover{
+  opacity:0.8 ;
 }
 
 .scroll span:nth-child(1){

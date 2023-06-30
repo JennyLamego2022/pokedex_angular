@@ -60,7 +60,7 @@ section{
   width: 20.8125rem;
   height: 2.75rem;
   border-radius: 5px 0px 0px 5px;
-  border: 1px solid #F4F4F4;
+  border: 1px solid var(--border-color-input);
   background: var(--text-color-light);
   box-shadow: var(--box-shadow-input);
 }
@@ -77,6 +77,16 @@ section{
   border-radius: 0px 5px 5px 0px;
   background: var(--text-color-secondary);
   box-shadow:var(--box-shadow-button);
+  cursor:pointer;
+}
+
+.input_search button:hover{
+  opacity:0.8 ;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 section:nth-child(2){
@@ -141,9 +151,9 @@ section:nth-child(2){
   }
 
   .search_pokemon h1{
-    font-size: 35px;
+    font-size: 2.1875rem;
     line-height: 2.5rem;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
   }
   .search_pokemon p{
     font-size: 1rem;

@@ -13,7 +13,12 @@
   --text-color-secondary: #EA686D;
   --text-color-light: #FFF;
 
+  --bg-color-primary: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0.00) 96.11%);
+  
   --bg-color-card:#FBFDFF;
+  --bg-color-card-active: rgba(234, 104, 109, 0.10);
+  --bg-color-btn: #F7802A;
+  --border-color-input: #F4F4F4;
 
   --box-shadow-input: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   --box-shadow-button:  0px 4px 15px 0px #EA686D;

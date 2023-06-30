@@ -1,17 +1,17 @@
 button{
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
+
   position:fixed;
-  bottom:15px;
-  right: 8px;
+  bottom:0.9375rem;
+  right: 0.5rem;
   z-index: 10;
+  
   background: rgb(90,100,138);
-background: linear-gradient(180deg, rgba(90,100,138,1) 7%, rgba(89,130,190,1) 100%);
-  /* font-size: 2rem; */
+  background: linear-gradient(180deg, rgba(90,100,138,1) 7%, rgba(89,130,190,1) 100%);
   padding: 0.3rem 0.3rem;
   border:none;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
- cursor:pointer;
- 
+  cursor:pointer;
 }
