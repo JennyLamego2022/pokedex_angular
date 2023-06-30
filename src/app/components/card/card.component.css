@@ -43,8 +43,9 @@
 
 .img img{
   object-fit: contain;
-  transform: scale(1.4);
   transform-origin: center center;
+  width: 7.75rem;
+  height: 7.75rem;
 }
 .identification, .data{
   width: 100%;

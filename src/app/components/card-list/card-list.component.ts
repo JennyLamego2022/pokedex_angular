@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Pokemon, PokemonService } from 'src/app/pokemon.service';
+import { CardDetailsService } from 'src/app/services/card-details.service';
 
 @Component({
   selector: 'app-card-list',
@@ -11,11 +12,17 @@ export class CardListComponent implements OnInit{
   pokemonData: any;
   pokemonList: Pokemon[] = [];
   pokemonList10: Pokemon[] = [];
+  cardPesquisado: any;
 
   @ViewChild('myScrollableElement', { static:false}) myScrollableElement:any;
   @ViewChild('myScrollableElement2', { static:false}) myScrollableElement2:any;
 
-  constructor(private pokemonService: PokemonService) {}
+  constructor(private pokemonService: PokemonService, private cardDetailsService: CardDetailsService) {
+    this.cardDetailsService.cardPesquisado$.subscribe((card: any) => {
+      this.cardPesquisado = card;
+    });
+  }
+  
 
   ngOnInit(): void {
     this.getPokemonList();

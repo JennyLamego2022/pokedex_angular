@@ -27,7 +27,9 @@
       </div>
     </div>
     <div class="all" #myScrollableElement2 style="overflow-x: scroll;">
+      <app-card *ngIf="cardPesquisado"></app-card>
       <app-card *ngFor="let pokemon of pokemonList"[pokemonData]="pokemon"></app-card>
+      
     </div>
   </section>
 </div>
