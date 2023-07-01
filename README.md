@@ -43,6 +43,8 @@ Codigo feito em Angular com TypeScript e CSS , dividido em componentes para exec
 - CardListComponent – Lista de cards, com os dados carregados com as informações da API.
 - CardDetailsComponent – Card de detalhes extras dos Pokémons.
 
+Feita a hospedagem do projeto na Vercel, link no item abaixo de hospedagem. 
+
 
 
 ## Imagens
@@ -73,7 +75,7 @@ Codigo feito em Angular com TypeScript e CSS , dividido em componentes para exec
  
 ## Hospedagem:
 
-Vercel: (em produção)
+Vercel: "https://pokedex-angular-peach.vercel.app/"
 
 
  ## Clonagem
@@ -84,7 +86,7 @@ Vercel: (em produção)
 
 - [x] Editor de código de sua preferência (recomendado VS code)
 - [x] Git
-- [ ] Instalação do Angular CLI através do terminal, digitar: 
+- [x] Instalação do Angular CLI através do terminal, digitar: 
       OBS: O primeiro passo para utilizar o Angular CLI é realizar a sua instalação e, para tal, é necessário ter o Node.JS instalado. Caso ainda não o tenha, acesse o site do Node.js e baixe a última versão destinada ao seu sistema operacional.
 
       Com o Node.JS instaladotemos à disposição o comando npm, necessário para instalar o Angular CLI. Neste ponto, será preciso abrir o terminal do seu sistema operacional e digitar a instrução: 
