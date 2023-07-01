@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { map, switchMap } from 'rxjs/operators';
 import { Observable, forkJoin } from 'rxjs';
 
-
-
 export interface Pokemon{
   id: number;
   name: string;
@@ -97,7 +95,6 @@ export class PokemonService {
                       front_default: pokemonResponse.sprites.other['official-artwork'].front_default
                     }
                   }
-                  
                 }
               };
             })

@@ -2,15 +2,10 @@
   <div class="identification">
     <p class="name">{{ pokemonData.name }}</p>
     <p class="cod">#COD</p>
-    <!-- <p class="cod">{{ pokemonData.id }}</p> -->
   </div>
   <div class="img">
     <img *ngIf="pokemonData.sprites && pokemonData.sprites.other['official-artwork'] && pokemonData.sprites.other['official-artwork'].front_default" [src]="pokemonData.sprites.other['official-artwork'].front_default" alt="Avatar Pokemon">
-
   </div>
-  <!-- <div class="img">
-    <img *ngIf="pokemonData.sprites && pokemonData.sprites?.other['official-artwork']?.front_default" [src]="pokemonData.sprites.other['official-artwork'].front_default" alt="Avatar Pokemon">
-  </div> -->
   <div class="info_data">
     <div class="data">
       <p class="data_type">Altura:</p>
