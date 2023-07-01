@@ -13,7 +13,7 @@ export class CardDetailsComponent {
   pokemonDetails: DetailsPokemon | null = null;
   
   ngOnInit() {
-    this.getPokemonDetailsById(6); 
+    this.getPokemonDetailsById(5); 
   }
 
   constructor(

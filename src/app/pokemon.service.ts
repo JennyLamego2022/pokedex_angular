@@ -47,7 +47,6 @@ export interface DetailsPokemon{
         
     //   }
     }; 
-     
   types:{
     type:{
       name:string;
